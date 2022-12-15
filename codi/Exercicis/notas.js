@@ -25,7 +25,7 @@ if(num1<5){
 
     num2=Number(prompt('Dame una nota entre 0 y 10'));
     num3=Number(prompt('Dame una otra entre 0 y 10'));
-    media=(num2+num3)/2;
+    media=Number((num2+num3)/2);
     document.write(media);
     if(media<5){
         alert(`La nota media es un ${media}, esto es un suspenso`);
