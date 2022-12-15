@@ -1,5 +1,10 @@
-num=Number(prompt('Dame un número para obtener su factorial:'));
-numEntrado=num;
+
+
+num=Number(prompt('Dame un número:'));
+while (num == null || /\D/.test(num) || num == "") {
+    num = prompt("Ha de ser un número!\nEscriu un número") 
+    };
+numEntrat=num;
 factorial=1;
 
 // For loop
@@ -25,6 +30,7 @@ document.write(factorial); */
 do{
     factorial = factorial * num
     num = num - 1;
+    console.log(num);
 }
-while(num>1);document.write(`El factorial de ${numEntrado} es ${factorial}`);
+while(num>1);document.write(`El factorial de ${numEntrat} es ${factorial}`);
 

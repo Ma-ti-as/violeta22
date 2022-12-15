@@ -3,7 +3,7 @@ Afegeix com a mínim un comentari que indiqui com és la finalitat del codi es
 
 /* let numDia=0; */
 dia=prompt('Introdueix un dia de la setmana').toUpperCase();
-console.log(dia);
+
 switch (dia){
     case ('DILLUNS'):
         numDia=1;
@@ -20,13 +20,16 @@ switch (dia){
     case('DIVENDRES'):
         numDia=5;
         break;
-    case('DSSABTE'):
+    case('DISSABTE'):
         numDia=6;
         break;
     case('DIUMENGE'):
         numDia=7;
         break;
+    default:
+        alert(`Has de ser un dia de la setmana de veritat`);
+        break;
 }
 
 alert(`${dia} és el dia de la setmana número ${numDia}`);
-document.getElementById("dia").innerHTML=`${dia} és el dia de la setmana número ${numDia}`;
+document.getElementById("dia").innerHTML= `${dia} és el dia de la setmana número ${numDia}`;
