@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario en layout flex</title>
+    <link rel="stylesheet" href="css/style_formfirstmobile.css">
+</head>
+
+<body>
+    <nav>Nav</nav>
+    <div class="container">
+        <header>Header</header>
+
+        <main>
+
+            <section>
+                <article>
+                    <form class="myForm" id="myForm" name="myForm" method="post"
+                        action="directorio/fichero_validacion.php">
+
+                        <div class="message">
+                            <label for="msg">Mensaje:</label>
+                            <textarea id="msg" required></textarea>
+
+                            <div class="envio">
+                                <button class="borrar" type="reset">Limpiar formulario</button>
+                                <button type="submit">Enviar formulario</button>
+                            </div>
+                        </div>
+
+                        <div class="contact">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required />
+
+                            <label for="townborn">Lugar de Nacimiento:</label>
+                            <input type="text" id="townborn" name="townborn" required />
+
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required />
+
+                            <label for="telefono">Telefono</label>
+                            <input type="text" id="telefono" name="telefono" pattern="\d{9}" required />
+                        </div>
+
+
+                    </form>
+                </article>
+            </section>
+            <aside>Aside</aside>
+
+        </main>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

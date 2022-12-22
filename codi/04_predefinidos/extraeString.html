@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Extraer texto de un input de texto</h1>
+    <label for="frase">Introduce una frase de más de 10 caracteres</label>
+    <input id="texto" type="text">
+    <button></button>
+    
+    <script>
+        let frase=prompt('Dime una frase:');
+        let largo=frase.length;
+        if(largo>10){
+            let extraido=frase.substr(largo-5,5);
+            alert(`Frase introducida:${frase}\nExtracción de:${extraido}`);
+ }else{
+    alert('Introduce más de diez caracteres')
+ }
+       
+       
+        
+    </script> 
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Extraer texto de un input de texto</h1>
+    <label for="texto">Introduce una frase de más de 10 caracteres</label>
+    <input id="texto" type="text" value="" name="texto">
+    <button id="extraer">Extraer</button>
+    <div id="mostra"></div>
+    
+    <script>
+        const mostra=document.getElementById('mostra');
+        const extraer=document.getElementById('extraer');
+       
+        extraer.onclick=()=>{
+        let text=document.getElementById('texto').value;
+        let largo=text.length;
+        if(largo>10){
+            let extraido=text.substr(largo-5,5);
+            let result=`Frase introducida:${text}\nExtracción de:${extraido}`;
+            mostra.innerHTML=result;
+        }else{
+            mostra.innerHTML="No puedo extraer nada";
+        }
+    }
+        
+    </script> 
+    
+</body>
+</html>

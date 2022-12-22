@@ -2,6 +2,9 @@
 3. Afegeix al Javascript “ejercicioIO.js” una funció “alert()” que mostri el valor introduït en el “prompt()”.*/
 
 pregunta=prompt('Quan s\'executa Javascript?');
+while(pregunta==null || pregunta==""){
+    pregunta = prompt("Has d'escriure alguna cosa!!") 
+};
 alert(`Has dit ${pregunta}`);
 
 

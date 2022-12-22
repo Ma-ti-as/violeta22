@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segona Tanda Exercicis JS</title>
+    <link rel="stylesheet" href="primer/primerStyles.css">
+    <link rel="stylesheet" href="segon/segonStyles.css">
+    <link rel="stylesheet" href="tercer/tercerStyles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <section id="primer" class="w3-red">
+        <h2>Exercici 9</h2>
+        <h3>Mides de la pantalla</h3>
+        <div id="linia">
+            <button class="w3-btn w3-teal w3-hover-purple but" id="demoPrimer">Mides pantalla</button>
+            <div id="mostrarPrimer" class="w3-margin-left w3-margin-right"></div>
+            <button class="w3-btn w3-teal w3-hover-purple" id="demo2">esborrar</button>
+        </div>
+      
+    </section>
+    <section id="segon" class="w3-teal">
+        <h2>Exercici 10</h2>
+        <h3>Número aleatori</h3>
+        <div id="row">
+            <button class="w3-btn w3-red w3-hover-purple but" id="demoSegon">Generar</button>
+            <div id="mostrarSegon" class="w3-margin-left w3-margin-right w3-center"></div>
+            <button class="w3-btn w3-red w3-hover-purple" id="demo3">esborrar</button>
+        </div>
+      
+    </section>
+    <section id="tercer" >
+        <h2>Exercici 12</h2>
+        <h3>Canviar color Background</h3>
+        <div class="selector">
+            <select id="colors" name="colors">
+                <option id="">Tria un color</div></option>
+                <option id="u" value="#3498DB" >Blue</option>
+                <option id="dos" value="#82E0AA">Green</option>
+                <option id="tres" value="#F1948A">Pale red</option>
+                <option id="quatre" value="#DC7633">Orange</option>
+            </select>
+            <button class="w3-btn w3-red w3-hover-purple" id="canviColor">Canvi Color</button>
+        </div>
+    </section>
+    <section id="quart" class="w3-teal">
+        <h2>Exercici 13</h2>
+        <h3>Finestra emergent</h3>
+        <div id="row">
+            <button onclick="myFunction()" class="w3-btn w3-red w3-hover-purple but" id="demoQuart">Generar</button>
+        </div>
+    </section>        
+        <script>
+        /* function myFunction() {
+          const myWindow = window.open(); */
+          /* myWindow.opener.document.getElementById("demoQuart").innerHTML = "HELLO!"; 
+        }*/
+        </script>
+
+<script src="primer/primerJs.js"></script>
+<script src="segon/segonJs.js"></script>
+<script src="tercer/tercerJs.js"></script>
+<script src="quart/quartJs.js"></script>
+</body>
+</html>

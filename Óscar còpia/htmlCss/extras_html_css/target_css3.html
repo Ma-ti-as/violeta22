@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pseudoestilo :target</title>
+
+    <style type="text/css">
+        *,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+
+        .cuadrado {
+            margin: 20px;
+            height: 100px;
+            width: 100px;
+            background-color: #F00;
+            transition: all .5s ease;
+
+
+        }
+
+        p {
+            margin: 20px;
+        }
+
+        #cuadrado1:target {
+            background-color: #FF0;
+        }
+
+        #cuadrado2:target {
+            background-color: rgb(71, 209, 214);
+            transform: translate(300%, 0%);
+            visibility: hidden;
+            transition-delay: 1s;
+        }
+
+
+        #cuadrado3:target {
+            background-color: rgba(201, 198, 180, 0.6);
+            transform: translate(0%, 200%);
+        }
+    </style>
+</head>
+
+<body>
+    <!--  (div.cuadrado#cuadrado$)*3 -->
+
+    <div class="cuadrado" id="cuadrado1"></div><br />
+    <div class="cuadrado" id="cuadrado2"></div> <br />
+    <div class="cuadrado" id="cuadrado3"></div><br />
+
+    <p><a href="#cuadrado1">Activar cuadrado 1 </a> || <a href="#cuadrado2">Activar cuadrado 2</a> || <a
+            href="#cuadrado3">Activar cuadrado 3</a></p>
+</body>
+
+</html>

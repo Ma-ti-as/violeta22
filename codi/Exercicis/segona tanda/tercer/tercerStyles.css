@@ -1,0 +1,19 @@
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+}
+ .selector{
+    display: flex;
+    justify-content: center;  
+} 
+button{
+    width: 160px;
+    margin-right: 10px;;
+}
+select{
+    width: 160px;
+}
+#tercer{
+    background-color:#b631c7;
+}

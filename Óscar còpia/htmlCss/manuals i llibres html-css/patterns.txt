@@ -1,0 +1,3 @@
+Email=[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}Quiero dígitos del 0 al 9 y solo 5 dígitosNúmeros=[0-9]{5}\d{9,13}Nombres con carácteres latinos=^ZÀ][A-{1}[a-zA-ZÀ-ÿ\u00f1\u00d1\s]{2,40}$
+
+letra dni=TRWAGMYFPDXBNJZSQVHLCKE[a-zA-ZÀ-ÿ\u00f1\u00d1\s]{2,40} ( acepto mayúsculas, minúsculas, acentos con ç y entre 2 y 40 caracteres

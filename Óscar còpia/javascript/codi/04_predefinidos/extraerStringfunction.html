@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extraer carácteres de un String</title>
+</head>
+
+<body>
+    <h1>Estraer texto de un input de texto</h1>
+    <label for="texto">Introduce una frase con mas de 10 carácteres</label>
+    <input id="texto" type="text" value="" name="texto">
+    <button id="extraer">Extraer</button>
+    <div id="mostra"></div>
+    <script>
+        const mostra = document.getElementById("mostra");
+        const extraer = document.getElementById("extraer");
+        function transforma() {
+            let text = document.getElementById("texto").value;
+            /* let text = prompt("Escriba un texto con más de 10 carácteres"); */
+            let largo = text.length;
+            if (text.length > 10) {
+                let extraido = text.substr(largo - 5, 5);
+                let result = `Texto introducido: ${text} y la extracción es ${extraido}`;
+                /* alert(result); */
+                mostra.innerHTML = result;
+            }
+            else {
+                mostra.innerHTML = "No puedo extraer nada de nada";
+            }
+        }
+        extraer.onclick = transforma;
+    </script>
+
+</body>
+
+</html>

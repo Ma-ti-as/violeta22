@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Violeta 22| Flexbox: Caja flexible</title>
+
+</head>
+
+<body>
+    <h1>Flexbox y cómo se utiliza</h1>
+    <p><strong>"Flexible box layout": </strong>Solución para desarrollos web responsive compatible con todos los
+        navegadores actuales y que se añade a la lista de displays y posicionamientos conocidos hasta 2018:</p>
+    <ul>
+        <li>Elementos en linea (display:inline)</li>
+        <li>Elementos en bloque (display:block)</li>
+        <li>Elementos en tabla (display:table)</li>
+        <li>Tipos de posicionamiento (position:absolute, relative,fixed,stiky,..)</li>
+        <li>Layout flexible (display:flex)</li>
+        <li>.....</li>
+    </ul>
+    <p><strong>Display:flex </strong> decidir el comportamiento de los hijos de un contenedor padre con respecto a el y
+        entre
+        ellos: Tanto en la vertical cómo en la horizontal (Híbrido de los otros métodos anteriores de
+        posicionamiento)</p>
+    <p>W3C define esta estructura como flujo flexible de contenidos siempre de izquierda a derecha (eje horizontal o
+        principal) y de arriba a abajo (eje vertical o secundario</p>
+
+    <img src="img/flex-conceptos.png" alt="Representación ejex de un layout flex"
+        title="Representación ejex de un layout flex">
+    <h2>Ejemplos de maquetación con Flexbox, configuración desde el contenedor</h2>
+    <!-- div.contenedor>(div.elemento{$})*7 -->
+    <p class="cambioCaja"><span>C</span>REAMOS UN DIV CONTENEDOR CON 7 DIVS INTERNAS DE CLASS "ELEMENTO"</p>
+    <div class="contenedor">
+        <div class="elemento">1</div>
+        <div class="elemento">2</div>
+        <div class="elemento">3</div>
+        <div class="elemento">4</div>
+        <div class="elemento">5</div>
+        <div class="elemento">6</div>
+        <div class="elemento">7</div>
+    </div>
+    <p>
+        En el ejemplo superior hemos visto las propiedades flex-direction (row, column), flex-wrap (wrap, nowrap),
+        flex-flow (direction wrap).
+        De manera nativa flex dispone a sus elementos como "flex: row nowrap"
+    </p>
+    <p class="cambioCaja"><span>C</span>REAMOS UN DIV CONTENEDOR2 CON 7 DIVS INTERNAS DE CLASS "ELEMENT", igual a la
+        anterior para trabajar la alineación horizontal de sus elementos</p>
+    <div class="contenedor2">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+        <div class="element">4</div>
+        <div class="element">5</div>
+        <div class="element">6</div>
+        <div class="element">7</div>
+    </div>
+    <p>
+        En el ejemplo superior hemos visto la propiedad justify-content(flex-start, flex-end,center, space-around,
+        space-between) y sus valores de alineación en el eje horizontal.
+    </p>
+
+    <p class="cambioCaja"><span>C</span>REAMOS UN DIV CONTENEDOR3 CON 7 DIVS INTERNAS DE CLASS "ELEMEN", igual a la
+        anterior para trabajar la alineación vertical de sus elementos</p>
+    <div class="contenedor3">
+        <div class="elemen uno">1</div>
+        <div class="elemen dos">2</div>
+        <div class="elemen uno">3</div>
+        <div class="elemen">4</div>
+        <div class="elemen dos">5</div>
+        <div class="elemen">6</div>
+        <div class="elemen dos">7</div>
+    </div>
+    <p>
+        En el ejemplo superior hemos visto la propiedad align-items( stretch, flex-start, flex-end,center, baseline)
+        y sus valores de alineación en el eje vertical.
+    </p>
+
+    <p class="cambioCaja"><span>C</span>REAMOS UN DIV CONTENEDOR4 CON 14 DIVS INTERNAS DE CLASS "ELEME",igual a la
+        anterior, para trabajar la alineación vertical cuando tenemos más de una línea de elementos cómo contenido
+        de la div padre </p>
+    <div class="contenedor4">
+        <div class="eleme">1</div>
+        <div class="eleme">2</div>
+        <div class="eleme">3</div>
+        <div class="eleme">4</div>
+        <div class="eleme">5</div>
+        <div class="eleme">6</div>
+        <div class="eleme">7</div>
+        <div class="eleme">8</div>
+        <div class="eleme">9</div>
+        <div class="eleme">10</div>
+        <div class="eleme">11</div>
+        <div class="eleme">12</div>
+        <div class="eleme">13</div>
+        <div class="eleme">14</div>
+    </div>
+    <p>
+        En el ejemplo superior hemos visto la propiedad align-content( center, flex-start, flex-end, space-around,
+        space-between)
+        y sus valores de alineación en el eje vertical.
+    </p>
+    <p><a href="siemprecentrado.html" target="new">Abrir demo de contenido siempre centrado en el navegador</a> || <a
+            href="ejresponsive.html" target="new">Abrir demo de contenido responsive</a></p>
+
+
+    <h2>Ejemplos de maquetación con Flexbox, configuración desde los elementos o etiquetas hijo del contenedor</h2>
+
+    <p>Las propiedades del elemento flexible son:</p>
+    <ul>
+        <li>order</li>
+        <li>flex-grow</li>
+        <li>flex-shrink</li>
+        <li>flex-basis</li>
+        <li>flex</li>
+        <li>align-self</li>
+    </ul>
+    <p class="cambioCaja"><span>C</span>REAMOS UN DIV de class "flex-container" CON 4 DIVS INTERNAS para modificar,o
+        cambiar el orden de inserción</p>
+    <p>Ejemplo:</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div class="orden">2</div>
+        <div class="orden2">3</div>
+        <div>4</div>
+    </div>
+    <p>
+        La propiedad order, especifica el orden de los elementos flexibles.<br>
+        El primer elemento flexible del código no tiene que aparecer como el primer elemento del diseño.<br>
+        El valor debe ser un número y su valor predeterminado es 0. Por tanto un número mayor desplaza este elemento al
+        final del contenedor.
+    </p>
+
+    <p class="cambioCaja"><span>C</span>REAMOS UN DIV de class "flex-container" CON 4 DIVS INTERNAS para modificar la
+        capacidad de expansión o crecimiento de alguna de estas div hijo</p>
+    <p>Ejemplo:</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div class="grow">2</div>
+        <div class="grow2">3</div>
+        <div>4</div>
+    </div>
+    <p>
+        La propiedad grow especifica la capacidad de crecimiento de los elementos flexibles.<br>
+        El valor debe ser un número y su valor predeterminado es 0. Por tanto un valor = 1 en un elemento flexible hace
+        que este crezca el doble que sus hermanos
+    </p>
+
+    <p class="cambioCaja"><span>C</span>REAMOS UN DIV de class "flex-container" CON 4 DIVS INTERNAS para modificar la
+        capacidad de reducción de alguna de estas div hijo. Establecemos a su vez la propiedad basis (establecer un
+        ancho inicial del elemento) en una de las div hijo</p>
+    <p>Ejemplo:</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div class="shrink">2</div>
+        <div class="shrink2 basis">3</div>
+        <div>4</div>
+    </div>
+    <p>
+        La propiedad shrink especifica la capacidad de reducción de los elementos flexibles.<br>
+        El valor debe ser un número y su valor predeterminado es 1. Por tanto un valor = 2 en un elemento flexible hace
+        que este reduzca su anchura a la mitad que sus hermanos.
+    </p>
+
+    <p class="cambioCaja"><span>C</span>REAMOS UN DIV de class "flex-container" CON 10 DIVS INTERNAS para modificar a
+        partir de la propiedad flex las tres propiedades individuales "grow" , "shrink" y "basis" de manera unificada en
+        alguna de una de las div hijo</p>
+    <p>Ejemplo:</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div class="paraladiv2">2</div> <!-- grow mayor que sus hermanos, tamaño inicial de 200px -->
+        <div class="paraladiv3">3</div>
+        <!-- grow mayor que sus hermanos, shrink mayor que sus hermanos tamaño inicial de 400px -->
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <p>
+        La propiedad shrink especifica la capacidad de reducción de los elementos flexibles.<br>
+        El valor debe ser un número y su valor predeterminado es 1. Por tanto un valor = 2 en un elemento flexible hace
+        que este reduzca su anchura a la mitad que sus hermanos.
+    </p>
+
+</body>
+
+</html>

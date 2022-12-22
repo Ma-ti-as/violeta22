@@ -1,0 +1,63 @@
+<!Doctype html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/w3.css">
+</head>
+
+<body class="w3-margin-left">
+    <div class="">
+
+        <h1 class="">Contacta con nosotros</h1>
+
+        <div id="error"><span id="badge" class="w3-badge w3-red"></span>
+        </div>
+
+        <form method="post" id="firstContact" name="firstContact" action="envio.php" class="">
+            <fieldset class="form-group">
+                <label for="email">Dirección de email</label>
+                <input type="text" class="w3-animated-input" id="email" name="email" value="">
+                <small id="mostra1" class="">Dato requerido</small>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="asunto">Asunto</label>
+                <input type="text" class="w3-input" id="asunto" name="asunto" value="">
+                <small id="mostra2" class="">Dato requerido</small>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="miedad">Fecha de nacimiento:</label>
+                <input type="date" id="miedad" name="miedad" class="w3-input" value="">
+                <small id="mostra4" class="">Dato requerido</small>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="dni">Dni</label>
+                <input type="text" class="w3-input" id="dni" name="dni" value="">
+                <small id="mostra5" class="">Dato requerido</small>
+            </fieldset>
+
+            <fieldset class="">
+                <label for="contenido">¿Qué te gustaría preguntarnos?</label>
+                <textarea class="w3-input" id="contenido" name="contenido" rows="5" cols="50" value=""></textarea>
+                <small id="mostra3" class="">Dato requerido</small>
+            </fieldset>
+            <fieldset class="">
+                <label for="acepto">Acepto las condiciones del servicio</label>
+                <input name="acepto"  id="acepto" type="checkbox" />
+                <small id="mostra6" class="">Dato requerido</small>
+            </fieldset>
+            <button type="button" name="borrar" id="borrar" class="w3-button w3-round w3-margin-top w3-hover-orange w3-red ">Borrar formulario</button>
+            <button type="submit" name="enviar" id="enviar" class="w3-btn w3-round w3-green w3-hover-orange w3-margin-top">Enviar</button>
+                
+        </form>
+
+    </div>
+    <script src="js/validadoreitorv2.js"></script>
+</body>
+
+</html>

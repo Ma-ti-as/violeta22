@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio color directo</title>
+</head>
+
+<body>
+
+    <select name="" id="">
+        <option value="">Rojo</option>
+        <option value="">Rojo</option>
+        <option value="">Rojo</option>
+        <option value="">Rojo</option>
+    </select>
+
+    <button>Cambia color de fondo a ROJO</button>
+    <button>Cambia color de fondo a VERDE</button>
+    <script>
+
+        const select = `  <select name="" id="">
+        <option value="">Rojo</option>
+        <option value="">Rojo</option>
+        <option value="">Rojo</option>
+        <option value="">Rojo</option>
+    </select>
+    
+    <button>Cambia color de fondo a ROJO</button>`;
+
+        alert("Cambiamos color de fondo a ROJO");
+        document.body.style.backgroundColor = "red";
+        setTimeout(() => {
+
+            alert("Cambiamos color de fondo a VERDE");
+            document.body.style.backgroundColor = "green";
+        }, 5000);
+
+    </script>
+
+</body>
+
+</html>
