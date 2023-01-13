@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> DOM y atributos</title>
+<!--     <link rel="stylesheet" type="text/css" href="w3css/w3css.css">
+ -->    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<style>
+    .oculto {
+        display: none;
+    }
+
+    .visible {
+        display: inline;
+    }
+</style>
+
+
+</head>
+
+<body>
+    <p id="texto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim
+        vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec,
+        commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at,
+        pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede.
+        <a id="enlace1" href="#">Seguir leyendo</a>
+
+        <span id="adicional" class="oculto">Nullam sit
+            amet nisl elementum elit convallis
+            malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis
+            pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere
+            ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis
+            scelerisque. Donec lacus neque, vehicula in, eleifend vitae, venenatis ac, felis. Donec
+            arcu. Nam sed tortor nec ipsum aliquam ullamcorper. Duis accumsan metus eu urna. Aenean
+            vitae enim. Integer lacus. Vestibulum venenatis erat eu odio. Praesent idDonec lacus neque, vehicula in,
+            eleifend vitae, venenatis ac, felis. Donec
+            arcu. Nam sed tortor nec ipsum aliquam ullamcorper. Duis accumsan metus eu urna. Aenean
+            vitae enim. Integer lacus. Vestibulum venenatis erat eu odio. Praesent id
+            metus.</span>
+        
+    </p>
+    
+    <script>
+        const enlace1=document.querySelector('#enlace1');
+        const elemento=document.querySelector('#adicional');
+
+        const muestra=()=>{
+            elemento.classList.toggle('visible');
+           if(enlace1.innerHTML==="Seguir leyendo"){
+                enlace1.innerHTML='Ocultar contenido';
+            }else{
+                enlace1.innerHTML='Seguir leyendo';
+                
+            }
+        }
+        
+        //document.getElementById("enlace1").onclick=muestra; 
+        enlace1.addEventListener("click", muestra);
+      
+
+
+       
+    </script>
+</body>
+
+</html>

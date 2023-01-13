@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Añadir elementos con DOM</title>
+    <!-- <link rel="stylesheet" type="text/css" href="w3css/w3css.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div class="w3-container">
+        <h2>Clicka sobre el boton para añadir mas elementos a la lista</h2>
+        <ul id="lista" class="w3-ul w3-lime w3-hoverable">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetuer adipiscing elit</li>
+            <li>Sed mattis enim vitae orci</li>
+            <li>Phasellus libero</li>
+            <li>Maecenas nisl arcu</li>
+        </ul>
+        <input id="entrarText" type="text">
+        <input id="more" type="button" class="w3-button w3-white w3-border" value="Añadir elemento" />
+        <input id="less" type="button" class="w3-button w3-white w3-border" value="Borrar elemento" />
+        <input id="lessAll" type="button" class="w3-button w3-white w3-border" value="Borrar últimos elementos" />
+    </div>
+    <script>
+        let cont = 0;
+
+        const more = document.querySelector("#more");
+        const less = document.querySelector("#less");
+        const lessAll = document.querySelector("#lessAll");
+        let entrarText=document.querySelector("#entrarText");
+        
+    const creaElemento = () => {
+            let elem = document.createElement("li");
+            console.log(entrarText.value);
+            let content = document.createTextNode(entrarText.value);
+            let lista = document.querySelector("#lista");
+            elem.appendChild(content);
+            lista.appendChild(elem);
+            cont++;
+            entrarText.value="";
+        }
+
+        const borraHijo = () => {
+            let list = document.getElementById("lista");
+            
+            if (cont > 0) {
+                list.removeChild(list.lastChild);
+                cont--;
+            }
+        }
+        const borraVariosHijos = () => {
+            let list = document.getElementById("lista");
+            
+            while (cont > 0) {
+                list.removeChild(list.lastChild);
+                cont--;
+            }
+        }
+
+        less.addEventListener("click", borraHijo);
+        more.addEventListener("click", creaElemento);
+        lessAll.addEventListener("click", borraVariosHijos);
+
+    </script>
+
+</body>
+
+</html>
