@@ -1,0 +1,40 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+}
+section{
+    
+    padding: 20px;
+}
+#linia{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+section{
+    text-align: center;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#demoPrimer, #demo2{
+    width: 160px;
+}
+
+#mostrarPrimer{
+   
+    width: 430px;
+    height:30px;
+    font-size: 16px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    padding:5px;
+}

@@ -1,0 +1,27 @@
+td#respuesta{
+    background-color: rgb(144, 229, 144);
+}
+td#pregunta{
+    background-color: rgb(240, 189, 142);
+}
+.fileQuestions, .fileAnswer{
+    padding-left: 10px;
+    height: 40px;
+}
+table{
+    border-collapse: collapse;
+}
+#botTabla{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(173, 173, 241);
+    border: none;
+    
+}
+#botTabla:hover{
+background-color: pink;
+}
+
+
+
+

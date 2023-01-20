@@ -1,0 +1,23 @@
+.tabla::placeholder {
+    color: rgb(202, 192, 192);
+    font-size: 10px;
+    text-align: center;
+    font-style: italic;
+}
+.tabla{
+    width: 110px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#dese{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tablaInput{
+    margin-bottom: 10px;
+}
+.editable{
+    text-align: center;
+}

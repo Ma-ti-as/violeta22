@@ -1,0 +1,28 @@
+.triangulo{
+    width: 300px;
+    height: 30px;
+    
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+input::placeholder {
+    color: rgb(202, 192, 192);
+    font-size: 10px;
+    text-align: center;
+    font-style: italic;}
+
+#row9{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mostrarArea{
+    background-color: white;
+    width: 300px;
+    height: 25px;
+}
+#mostrarArea{
+    color:black
+    
+}

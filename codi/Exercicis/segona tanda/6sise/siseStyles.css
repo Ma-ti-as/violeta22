@@ -1,0 +1,15 @@
+#mostrarFrase,#texto2{
+    text-align: center;
+    width: 320px;
+    height: 25px;
+    background-color: white;
+    color: black;
+    margin-top: 5px;
+}
+.sis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;;
+
+}
